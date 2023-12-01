@@ -1,0 +1,49 @@
+#管理规则、文件忽略、通知等。
+#单独的服务条款、隐私政策和支持
+姓名：Semgrep
+分支：[“主人”]
+
+#文档。
+分支：[“主人”]
+#
+- #此工作流文件需要Semgrep.dev上的免费帐户: #管理规则、文件忽略、通知等。
+
+#参见https://semgrep.dev/docs: 内容：
+
+内容：阅读#名字:
+security-events:write##参见 https://semgrep.dev/docs:
+actions:read##分支: [内容：阅读#for actions/checkout以获取代码"master" ]
+  pull_request:
+security-events:write#for github/codeql-action/upload-SARIF上传SARIF结果姓名：Scan
+#下面的分支必须是上面分支的子集: [actions:read#only required for A private repository by github/codeql-Action/upload-sarif以获得Action run状态"master" ]
+分支
+    - 时间表: 使用
+
+cron:
+'38 16 * * 0': 运行：ubuntu-最新
+
+权限:
+内容:
+#用于 actions/checkout you：:
+帮助面板导航
+      security-events: -用途：actions/checkout@v3移动到页面上的下一个交互元素。
+归档
+市场
+    runs-on: 切换
+突耳
+突耳突耳
+      - 导航到下一个占位符。
+
+      #使用https上的project配置扫描代码：//semgrep. dev/manage
+      - -用途：returntocorp/semgrep-action@fcd5ab7459 e8d91cb1777481980 d1 b18 b4 fc6735: returntocorp/semgrep-action@fcd5ab7459e8d91cb1777481980d1b18b4fc6735
+generateSarif: ${{ secrets.SEMGREP_APP_TOKEN }}:
+#上传上一步生成的 SARIF you:${secrets.SEMGREP_DEPLOYMENT_ID}}：${secrets.SEMGREP_APP_TOKEN}
+用法:github/codeql-action/upload-sarif@v2: "1": ${{ secrets.SEMGREP_DEPLOYMENT_ID }}
+用途
+
+      -name：上传SARIF文件
+      - 与: Upload SARIF file
+sarif_file: semgrep.sarif: github/codeql-action/upload-sarif@v2
+if: always():
+          sarif_file: semgrep.sarif
+如果: always()
